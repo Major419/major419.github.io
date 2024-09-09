@@ -1,108 +1,167 @@
-body {
-    background-color: blanchedalmond;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0px;
-    font-size: 2vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: 'Fredoka One', sans-serif;
-    box-shadow: 6px 6px 8px 2px bisque;
-    width: 15%;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+header h1 {
+    font-size: 2.5em;
     text-shadow:
     1px 1px 0px black,
     -1px 1px 0px black,
-    1px -1px 0px blueviolet,
-    -1px -1px 0px blueviolet;
+    1px -1px 0px gold,
+    -1px -1px 0px gold;
 }
 
-ul{
-    margin: 0px;
-}
-
-
-body > header {
-    background-color: burlywood;
-    color: azure;
-}
-
-#main-header {
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-body > header > nav > ul {
+nav ul {
     list-style: none;
-}
-
-#nav-ul {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-#nav-ul > li {
+nav ul li {
     padding: 10px;
     margin: auto;
 }
 
-.navbutton {
-    color: azure;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 6px;
-    border: 1px solid white;
+    font-size: 15px;
+    border: 1.5px solid white;
     border-radius: 8%;
+    padding: 5px 10px; 
+    display: inline-block;
 }
 
-body > main article {
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.sidebar section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.sidebar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sidebar table th, .sidebar table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar table th {
+    background-color: #ff0000;
+    color: white;
+}
+
+.main-content {
     width: 70%;
-    margin: auto;
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div {
-    width: 80%;
-}
-
-form {
+#hero {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/Emirates_Stadium_2000_04.jpg');
+    background-size: contain;
+    padding: 10vh;
     text-align: center;
+    color: white;
 }
 
-h3 {
+#hero h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#about, #players, #fans, #contact, #gallery {
+    padding: 2em;
     text-align: center;
+    background-color: white;
+    margin: 1em 0;
+    border-radius: 8px;
 }
 
-h2 {
-    text-align: center;
-}
-
-body > footer {
-    background-color: burlywood;
+#players ul {
     display: flex;
-}
-
-img {
-    border-radius: 30%;
-}
-
-#footer-ul {
-    display: flex;
+    justify-content: space-evenly;
     list-style: none;
-}
-
-#footer-ul > div > li {
     margin-left: 15px;
 }
 
-#footer-ul > div > li > a {
-    text-decoration: none;
-    color: azure;
+#about img {
+    margin-top: 1em;
+}
+
+h2 {
+    color: #ff0000;
+    margin-bottom: 1em;
+}
+
+.latest-news {
+    margin-top: 20px;
+}
+
+.news-item {
+    position: relative;
+    width: 100%;
+}
+
+.news-img {
+    width: 100%;
+    max-width: 300px; 
+    height: fit-content; 
+    border-radius: 8px;
+    display: block;
+    margin: 10px; 
+}
+
+.news-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 280px;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 1em;
+    color: white;
+    text-align: center;
 }
